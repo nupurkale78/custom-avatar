@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Picture and Avatar Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box avatar-selection">
+            <h2>Select Your Avatar</h2>
+            <select id="avatarStyle">
+                <option value="avataaars">Avatars</option>
+                <option value="bottts">Bots</option>
+                <option value="identicon">Identicon</option>
+                <option value="initials">Initials</option>
+                <option value="micah">Micah</option>
+            </select>
+            <input type="text" id="avatarSeed" placeholder="Enter a name for your avatar">
+            <button id="generateButton">Generate Avatar</button>
+            <div id="avatarPreview" class="avatar-preview">
+                <img src="" alt="Avatar Preview" id="avatarImage" />
+            </div>
+        </div>
+        <div class="box image-upload">
+            <h2>Upload Your Picture</h2>
+            <input type="file" id="imageUpload" accept="image/*" hidden />
+            <button id="choose-file-btn">Choose File (Max 10MB)</button>
+            <div id="preview" class="image-preview">
+                <img src="" alt="Profile Picture Preview" id="profileImage" />
+            </div>
+            <button id="uploadButton">Upload</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
